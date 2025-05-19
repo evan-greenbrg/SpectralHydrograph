@@ -211,8 +211,6 @@ def main(
     ray_ip_head=None,
 ):
 
-    path = '/Users/bgreenbe/Projects/SWOT/Mississippi1/Data/CSV/EMIT_L2A_RFL_001_20241002T165450_sample.csv'
-    out_root = '/Users/bgreenbe/Projects/SWOT/Mississippi1/Data/CSV'
     df = pandas.read_csv(path)
     wl = df['wl'].values
     wl_use = ((wl >= 400) & (wl <= 710))
